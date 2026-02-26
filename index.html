@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CitrusBurn™ - প্রাকৃতিকভাবে মেদ ঝরান</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-orange: #ff8c00;
+            --dark-blue: #1a2a6c;
+            --white: #ffffff;
+            --light-grey: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-grey);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1610970881699-44a5587cabec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-orange);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-btn {
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            background-color: #e67e00;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .feature-card {
+            background: var(--light-grey);
+            padding: 30px;
+            border-radius: 15px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            color: var(--dark-blue);
+        }
+
+        /* Product Section */
+        .product-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 60px 10%;
+            gap: 50px;
+        }
+
+        .product-info img {
+            max-width: 400px;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        /* Ingredients */
+        .ingredients {
+            background: var(--dark-blue);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .ingredient-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>CitrusBurn™ - আপনার ফিটনেস যাত্রার নতুন সঙ্গী</h1>
+        <p>প্রাকৃতিকভাবে মেটাবলিজম বাড়ান এবং জেদি চর্বি ঝরিয়ে ফেলুন দ্রুত। কোনো পার্শ্বপ্রতিক্রিয়া ছাড়াই ফিরে পান আপনার আত্মবিশ্বাস।</p>
+        <a href="#order" class="cta-btn">এখনই অর্ডার করুন (৫০% ছাড়)</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🔥 ফ্যাট বার্নিং</h3>
+            <p>থার্মোজেনিক ফর্মুলা সরাসরি চর্বি কোষে কাজ করে।</p>
+        </div>
+        <div class="feature-card">
+            <h3>⚡ শক্তি বৃদ্ধি</h3>
+            <p>সারাদিন এনার্জিতে ভরপুর থাকুন কোনো ক্লান্তি ছাড়াই।</p>
+        </div>
+        <div class="feature-card">
+            <h3>🌱 প্রাকৃতিক উপাদান</h3>
+            <p>গ্রিন টি ও সাইট্রাস নির্যাস দিয়ে তৈরি ১০০% নিরাপদ।</p>
+        </div>
+    </section>
+
+    <section class="product-info">
+        <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=600&q=80" alt="CitrusBurn Supplement">
+        <div>
+            <h2 style="color: var(--dark-blue);">কেন CitrusBurn™ বেছে নেবেন?</h2>
+            <p>আমাদের বিশেষ ফর্মুলা শুধুমাত্র ওজন কমায় না, বরং আপনার শরীরের হজম ক্ষমতা বা মেটাবলিজম স্থায়ীভাবে উন্নত করে। আপনি যদি ডায়েট এবং ব্যায়ামের সঠিক ফলাফল না পান, তবে CitrusBurn™ হতে পারে আপনার সেরা সমাধান।</p>
+            <ul style="list-style: none; padding: 0;">
+                <li>✅ ৬০ দিনের মানি-ব্যাক গ্যারান্টি</li>
+                <li>✅ এফডিএ অনুমোদিত ল্যাবে তৈরি</li>
+                <li>✅ কোনো ক্ষতিকারক কেমিক্যাল নেই</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="ingredients">
+        <h2>পাওয়ারফুল ইনগ্রেডিয়েন্টস</h2>
+        <div class="ingredient-list">
+            <div>
+                <h4>Green Tea Extract</h4>
+                <p>মেটাবলিজম বুস্ট করে</p>
+            </div>
+            <div>
+                <h4>Caffeine</h4>
+                <p>মনোযোগ ও এনার্জি বাড়ায়</p>
+            </div>
+            <div>
+                <h4>Garcinia Cambogia</h4>
+                <p>ক্ষুধা নিয়ন্ত্রণ করে</p>
+            </div>
+            <div>
+                <h4>Ashwagandha</h4>
+                <p>মানসিক প্রশান্তি দেয়</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" style="text-align: center; padding: 60px 20px;">
+        <h2>অফারটি শেষ হওয়ার আগে আজই সংগ্রহ করুন!</h2>
+        <p>মাত্র কয়েক পিস স্টক বাকি আছে।</p>
+        <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">এখনই কিনুন - ৫৯% ডিসকাউন্ট</a>
+    </section>
+
+</body>
+</html>
